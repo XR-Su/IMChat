@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as an anchor when no page is set 1`] = `
+<a
+  className="normal"
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+  aa
+</a>
+`;
+
+exports[`renders correctly 1`] = `
+<a
+  className="normal"
+  href="http://www.taobao.com"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+  aa
+</a>
+`;
