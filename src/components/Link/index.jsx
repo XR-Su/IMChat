@@ -34,7 +34,6 @@ export default class Link extends React.Component {
         onMouseLeave={this._onMouseLeave}
       >
         {this.props.children}
-        aa
       </a>
     );
   }

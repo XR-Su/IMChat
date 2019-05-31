@@ -1,5 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`changes the class when hovered 1`] = `
+<a
+  className="normal"
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;
+
+exports[`changes the class when hovered 2`] = `
+<a
+  className="hovered"
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;
+
+exports[`changes the class when hovered 3`] = `
+<a
+  className="normal"
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;
+
+exports[`properly escapes quotes 1`] = `
+<a
+  className="normal"
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  "Facebook" \\'is \\ 'awesome'
+</a>
+`;
+
 exports[`renders as an anchor when no page is set 1`] = `
 <a
   className="normal"
@@ -8,7 +52,6 @@ exports[`renders as an anchor when no page is set 1`] = `
   onMouseLeave={[Function]}
 >
   Facebook
-  aa
 </a>
 `;
 
@@ -20,6 +63,5 @@ exports[`renders correctly 1`] = `
   onMouseLeave={[Function]}
 >
   Facebook
-  aa
 </a>
 `;

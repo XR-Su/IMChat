@@ -22,5 +22,17 @@ it("properly escapes quotes", () => {
 });
 
 it("changes the class when hovered", () => {
-	const component = renderer.create(<Link page="">Facebook</Link>)
+  const component = renderer.create(<Link page="">Facebook</Link>);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+
+  // manually trigger the callback
+  tree.props.onMouseEnter();
+  // re-rendering
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+
+  tree.props.onMouseLeave();
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
