@@ -1,10 +1,6 @@
-/**
- * @Name:
- * @Description:
- * @author RiSusss
- * @date 2019/5/30
- */
-import sum from "./sum";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.less';
+import App from "./app";
 
-let res = sum(1,2);
-console.log(res);
+ReactDOM.render(<App />, document.getElementById('root'));
